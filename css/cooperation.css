@@ -5,35 +5,35 @@
     overflow: hidden;
     color: #eaeaf2;
     min-height: 100vh;
-    background: #020639; /* Основной фон на весь экран */
+    background: #020639;
 }
 
-/* Контейнер для фонового изображения */
+/* Контейнер для фонового изображения - ИЗМЕНЕНО */
 .cooperation__bg-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 70vh;
+    height: 100vh; /* Растягиваем на всю высоту viewport */
     overflow: hidden;
     z-index: 0;
 }
 
-/* Фоновое изображение - оптимальное масштабирование */
+/* Фоновое изображение - ИЗМЕНЕНО */
 .cooperation__bg-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../img/Sturgeon.webp'), url('../img/Sturgeon.jpg');
-    background-position: center top;
-    background-size: cover;
+    background-image: url('../img/coop.png');
+    background-size: cover; /* Заполняем весь контейнер */
+    background-position: center center;
     background-repeat: no-repeat;
     filter: grayscale(100%) contrast(130%) brightness(90%);
 }
 
-/* Градиентный переход */
+/* Градиентный переход - ИЗМЕНЕНО */
 .cooperation__gradient {
     position: absolute;
     top: 0;
@@ -43,11 +43,11 @@
     background: linear-gradient(
         to bottom,
         rgba(2, 6, 57, 0) 0%,
-        rgba(2, 6, 57, 0.3) 40%,
-        rgba(2, 6, 57, 0.7) 70%,
+        rgba(2, 6, 57, 0.1) 40%,
+        rgba(2, 6, 57, 0.3) 70%,
         #020639 100%
     );
-    z-index: 1;
+    z-index: 3;
 }
 
 .cooperation__content {
@@ -56,26 +56,23 @@
     padding: 0 20px;
     position: relative;
     z-index: 2;
-    padding-bottom: 100px;
+    background-color: inherit;
 }
 
 /* Заголовок */
 .cooperation__title {
     display: block;
-    text-align: left;
+    text-align: center;
     margin: 0 0 40px 0;
-    font-size: 48px;
+    font-size: 96px;
     font-weight: 700;
     line-height: 1.1;
     color: #FDCC68;
-    text-shadow: 0 0 18px rgba(253, 204, 104, 0.25);
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 /* Основной текст */
 .cooperation__text p {
-    font-size: 24px;
+    font-size: 30px;
     line-height: 1.6;
     color: #e6e7ec;
     margin-bottom: 60px;
@@ -85,11 +82,11 @@
 
 /* Секция info */
 .info {
-    background: #020639;
-    padding: 80px 0 60px;
+    padding: 80px 0 0;
     margin: 0;
     position: relative;
     z-index: 2;
+    margin-bottom: 200px;
 }
 
 .cooperation__info {
@@ -99,146 +96,56 @@
 }
 
 .cooperation__info p {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.5;
-    color: #cfd2e1;
+    color: #fff;
     margin-top: 0;
     max-width: 100%;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     font-weight: 400;
 }
 
-/* Контактная информация в футере */
-.footer__contacts {
-    text-align: left;
-}
-
-.footer__phone a {
-    font-size: 24px;
-    margin-bottom: 15px;
-    display: block;
-}
-
-.footer__addresses p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    line-height: 1.4;
-}
-
-.footer__schedule p {
-    font-size: 16px;
-    margin-bottom: 8px;
-    color: #b0b0b0;
-}
-
-.footer__email a {
-    font-size: 16px;
-    color: #FDCC68;
-}
-
-/* Адаптивность для разных разрешений */
 @media (min-width: 1920px) {
-    /* 4K и большие мониторы */
     .cooperation__bg-container {
-        height: 60vh;
-    }
-    .cooperation__bg-image {
-        background-size: contain; /* Для больших экранов сохраняем пропорции */
-        background-position: center center;
+        height: 100vh;
     }
 }
 
 @media (min-width: 1200px) {
-    /* Десктоп */
     .cooperation__bg-container {
-        height: 65vh;
-    }
-    .cooperation__content {
-        padding-bottom: 120px;
+        height: 100vh;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    /* Ноутбуки */
     .cooperation__bg-container {
-        height: 60vh;
-    }
-    .cooperation__content {
-        padding-bottom: 100px;
+        height: 100vh;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    /* Планшеты */
     .cooperation {
         padding: 150px 0 0;
     }
     .cooperation__bg-container {
-        height: 50vh;
-    }
-    .cooperation__content {
-        padding-bottom: 80px;
-    }
-    .cooperation__title {
-        font-size: 40px;
-    }
-    .cooperation__text p {
-        font-size: 20px;
+        height: 100vh;
     }
 }
 
 @media (max-width: 767px) {
-    /* Мобильные */
     .cooperation {
         padding: 120px 0 0;
     }
     .cooperation__bg-container {
-        height: 40vh;
-    }
-    .cooperation__content {
-        padding-bottom: 60px;
-    }
-    .cooperation__title {
-        font-size: 32px;
-        text-align: center;
-    }
-    .cooperation__text p {
-        font-size: 18px;
-        text-align: center;
-    }
-    .info {
-        padding: 60px 0 40px;
+        height: 100vh;
     }
 }
 
 @media (max-width: 480px) {
-    /* Маленькие мобильные */
     .cooperation {
         padding: 100px 0 0;
     }
     .cooperation__bg-container {
-        height: 35vh;
-    }
-    .cooperation__content {
-        padding-bottom: 40px;
-    }
-    .cooperation__title {
-        font-size: 28px;
-    }
-    .cooperation__text p {
-        font-size: 16px;
-    }
-    .info {
-        padding: 40px 0 30px;
-    }
-}
-
-/* Центрирование на мобильных */
-@media (max-width: 767px) {
-    .footer__contacts,
-    .cooperation__title,
-    .cooperation__text p,
-    .cooperation__info p {
-        text-align: center;
+        height: 100vh;
     }
 }

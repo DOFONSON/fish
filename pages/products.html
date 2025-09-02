@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,18 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../css/products.css">
 </head>
+
 <body>
     <header class="header">
         <nav class="nav">
             <div class="nav__container">
                 <div class="nav__logo">
-                    <div class="logo-icon">🐟</div>
-                    <h1>ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО</h1>
+                    <div class="logo-icon"><img src="../img/Logo.svg" alt="logo"></div>
+                    <h1>ОСЕТРИНСКОЕ <br> <span class="nav__logo_sub">РЫБХОЗЯЙСТВО</span></h1>
                 </div>
                 <ul class="nav__menu">
-                    <li><a href="../index.html" class="nav__link">главная</a></li>
                     <li><a href="fishing.html" class="nav__link">рыбалка</a></li>
                     <li><a href="cooperation.html" class="nav__link">сотрудничество</a></li>
-                    <li><a href="purchase.html" class="nav__link">закупка</a></li>
                     <li><a href="products.html" class="nav__link nav__link--active">продукты</a></li>
                     <li><a href="contacts.html" class="nav__link">контакты</a></li>
                 </ul>
@@ -32,41 +32,32 @@
         </nav>
     </header>
 
-    <main>
-        <section id="products" class="products">
-            <div class="products__container">
-                <div class="products__content">
-                    <h2 class="products__title">продукты</h2>
-                    <div class="products__text">
-                        <p>ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО предлагает широкий ассортимент качественной рыбной продукции, выращенной в экологически чистых условиях.</p>
-                    </div>
-                    <div class="products__grid">
-                        <div class="product__card">
-                            <div class="product__icon">🐟</div>
-                            <h3>Живая рыба</h3>
-                            <p>Осетр, стерлядь, белуга различных размеров</p>
-                            <span class="product__price">от 2000 руб/кг</span>
-                        </div>
-                        <div class="product__card">
-                            <div class="product__icon">🥘</div>
-                            <h3>Охлажденная рыба</h3>
-                            <p>Свежая рыба, охлажденная до +2°C</p>
-                            <span class="product__price">от 1500 руб/кг</span>
-                        </div>
-                        <div class="product__card">
-                            <div class="product__icon">🥫</div>
-                            <h3>Переработанная продукция</h3>
-                            <p>Икра, филе, копченая рыба</p>
-                            <span class="product__price">от 3000 руб/кг</span>
-                        </div>
-                        <div class="product__card">
-                            <div class="product__icon">🌱</div>
-                            <h3>Молодь для разведения</h3>
-                            <p>Мальки осетровых для выращивания</p>
-                            <span class="product__price">от 500 руб/шт</span>
-                        </div>
-                    </div>
+    <main class="products">
+        <!-- Фоновое изображение как отдельный блок -->
+        <div class="products__hero">
+            <div class="products__hero-image"></div>
+            <div class="products__hero-gradient"></div>
+        </div>
+
+        <!-- Основной контент -->
+        <section class="products__main">
+            <div class="products__content">
+                <h2 class="products__title">продукты</h2>
+                <div class="products__text">
+                    <p>Осетринское рыбхозяйство предлагает свою продукцию как для частных покупателей, так и для
+                        различных организаций — ресторанов, магазинов, гостиниц и других предприятий. В нашем
+                        ассортименте — высококачественная икра и свежая рыба, которые отличаются отличным вкусом и
+                        соответствуют всем стандартам качества. Мы гарантируем надежные поставки и индивидуальный подход
+                        к каждому клиенту, будь то частное лицо или крупная организация.</p>
+                    <p>Наша икра и рыба проходят строгий контроль качества и полностью соответствуют всем санитарным и
+                        ветеринарным нормам, что делает нас надежным партнером для бизнеса любого уровня.</p>
                 </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="products__info">
+                <p>Получить более подробную информацию вы всегда можете связавшись с нами по контактному телефону.</p>
             </div>
         </section>
     </main>
@@ -74,7 +65,7 @@
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__logo">
-                <div class="logo-icon">🐟</div>
+                <div class="logo-icon"><img src="../img/Logo.svg" alt="logo"></div>
                 <h3>ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО</h3>
             </div>
             <div class="footer__contacts">
@@ -95,7 +86,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="../script.js"></script>
 </body>
+
 </html>
