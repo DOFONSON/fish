@@ -1,0 +1,13 @@
+/* Рыбалка */
+.fishing { padding: 120px 0 80px; min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; background: linear-gradient(180deg, rgba(2,6,57,0) 0%, #020639 100%); }
+.fishing__container { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 2; }
+.fishing__title { font-size: 4rem; font-weight: 700; margin-bottom: 2rem; line-height: 1.2; color: #FDCC68; text-align: center; text-shadow: 0 0 30px rgba(255,210,106,0.3); text-transform: lowercase; }
+.fishing__text p { font-size: 1.2rem; line-height: 1.8; color: #e0e0e0; margin-bottom: 2rem; }
+.fishing__info h3 { color: #FDCC68; font-size: 1.5rem; margin-bottom: 1rem; }
+.fishing__info ul { list-style: none; margin-left: 1rem; }
+.fishing__info li { color: #b0b0b0; margin-bottom: 0.5rem; position: relative; padding-left: 1.5rem; }
+.fishing__info li::before { content: '🎣'; position: absolute; left: 0; top: 0; }
+.fishing__background { position: relative; height: 100%; display: flex; justify-content: center; align-items: center; }
+.fishing-image { width: 500px; height: 400px; background: rgba(255,255,255,0.06); border-radius: 20px; }
+
+@media (max-width: 768px) { .fishing__container { grid-template-columns: 1fr; text-align: center; gap: 2rem; } .fishing__title { font-size: 3rem; } }
