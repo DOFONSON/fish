@@ -283,6 +283,7 @@ body {
         #020639 100%
     );
     z-index: 10;
+    pointer-events: none;
 }
 
 .info {
@@ -455,7 +456,7 @@ footer p {
             rgba(0, 0, 0, 0.25) 65%,
             rgba(0, 0, 0, 0.0) 100%);
     }
-
+    
     .header,
     .nav__container,
     .hero__container,
@@ -561,9 +562,9 @@ footer p {
     .nav__toggle span {
         background: #FDCC68;
         box-shadow: 0 0 10px rgba(253, 204, 104, 0.3);
-        transition: all 0.3s ease;
-    }
-    
+    transition: all 0.3s ease;
+}
+
     .nav__toggle:active span {
         background: #d4a847;
         box-shadow: 0 0 15px rgba(253, 204, 104, 0.5);
@@ -586,8 +587,8 @@ footer p {
     }
     
     .nav__menu {
-        position: fixed;
-        top: 0;
+    position: fixed;
+    top: 0;
         right: -100%;
         gap: 5px;
         width: 300px;
@@ -606,7 +607,7 @@ footer p {
     }
     
     .nav__menu--active {
-        right: 0;
+    right: 0;
     }
     
     .nav__menu li {
