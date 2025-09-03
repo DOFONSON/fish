@@ -1,4 +1,3 @@
-/* Сотрудничество */
 .cooperation {
     padding: 200px 0 0;
     position: relative;
@@ -8,46 +7,17 @@
     background: #020639;
 }
 
-/* Контейнер для фонового изображения - ИЗМЕНЕНО */
-.cooperation__bg-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh; /* Растягиваем на всю высоту viewport */
-    overflow: hidden;
-    z-index: 0;
-}
-
-/* Фоновое изображение - ИЗМЕНЕНО */
-.cooperation__bg-image {
+.bg-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: url('../img/coop.png');
-    background-size: cover; /* Заполняем весь контейнер */
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     filter: grayscale(100%) contrast(130%) brightness(90%);
-}
-
-/* Градиентный переход - ИЗМЕНЕНО */
-.cooperation__gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        to bottom,
-        rgba(2, 6, 57, 0) 0%,
-        rgba(2, 6, 57, 0.1) 40%,
-        rgba(2, 6, 57, 0.3) 70%,
-        #020639 100%
-    );
-    z-index: 3;
 }
 
 .cooperation__content {
@@ -59,7 +29,6 @@
     background-color: inherit;
 }
 
-/* Заголовок */
 .cooperation__title {
     display: block;
     text-align: center;
@@ -70,7 +39,6 @@
     color: #FDCC68;
 }
 
-/* Основной текст */
 .cooperation__text p {
     font-size: 30px;
     line-height: 1.6;
@@ -80,328 +48,32 @@
     font-weight: 400;
 }
 
-/* Секция info */
-.info {
-    padding: 80px 0 0;
-    margin: 0;
-    position: relative;
-    z-index: 2;
-    margin-bottom: 200px;
-}
 
-.cooperation__info {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.cooperation__info p {
-    font-size: 24px;
-    line-height: 1.5;
-    color: #fff;
-    margin-top: 0;
-    max-width: 100%;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    font-weight: 400;
-}
-
-@media (min-width: 1920px) {
-    .cooperation__bg-container {
-        height: 100vh;
-    }
-}
-
-@media (min-width: 1200px) {
-    .cooperation__bg-container {
-        height: 100vh;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .cooperation__bg-container {
-        height: 100vh;
-    }
-}
 
 @media (min-width: 768px) and (max-width: 991px) {
     .cooperation {
         padding: 150px 0 0;
     }
-    .cooperation__bg-container {
-        height: 100vh;
+    .title {
+        font-size: 60px;
+        line-height: 1.15;
+        margin-bottom: 30px;
     }
-}
-
-@media (max-width: 767px) {
-    .cooperation {
-        padding: 120px 0 0;
+    .text p {
+        font-size: 22px;
+        line-height: 1.6;
+        margin-bottom: 40px;
     }
-    .cooperation__bg-container {
-        height: 100vh;
+    .info {
+        margin-bottom: 160px;
     }
 }
 
 @media (max-width: 480px) {
+    .cooperation__bg-image {
+        height: 40vh;
+    }
     .cooperation {
         padding: 100px 0 0;
-    }
-    .cooperation__bg-container {
-        height: 100vh;
-    }
-}
-
-/* Скрытие подменю и контактов на десктопной версии */
-@media (min-width: 769px) {
-    .nav__dropdown {
-        position: relative;
-    }
-    
-    .nav__dropdown-toggle {
-        display: none;
-    }
-    
-    .nav__submenu {
-        display: none;
-    }
-    
-    .nav__contacts {
-        display: none;
-    }
-}
-
-/* Стили для бургер-меню на странице cooperation */
-@media (max-width: 768px) {
-    .nav__dropdown .nav__link {
-        display: none;
-    }
-    
-    .nav__submenu {
-        display: block;
-    }
-    
-    .nav__contacts {
-        padding: 0 20px;
-        display: block;
-    }
-    
-    .nav__toggle {
-        z-index: 1001;
-        position: relative;
-    }
-    
-    .nav__toggle span {
-        background: #FDCC68;
-        box-shadow: 0 0 10px rgba(253, 204, 104, 0.3);
-        transition: all 0.3s ease;
-    }
-    
-    .nav__toggle:active span {
-        background: #d4a847;
-        box-shadow: 0 0 15px rgba(253, 204, 104, 0.5);
-    }
-    
-    .nav__toggle:active {
-        transform: scale(0.95);
-    }
-    
-    .nav__menu {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        gap: 5px;
-        width: 300px;
-        height: 100vh;
-        background: #808BA7;
-        backdrop-filter: blur(10px);
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 100px 0 2rem 0; /* ← top, right, bottom, left */
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
-        transition: right 0.3s ease;
-        z-index: 1000;
-        border-left: 1px solid rgba(255, 255, 255, 0.2);
-        overflow-y: auto;
-    }
-    .nav__menu--active {
-        right: 0;
-    }
-    
-    .nav__menu li {
-        margin: 0px 0;
-        text-align: center;
-        width: 100%;
-    }
-    
-    .nav__link {
-        font-size: 15px;
-        padding: 5px 35px;
-        display: block;
-        border-radius: 8px;
-        transition: all 0.3s ease;
-        width: 100%;
-        text-align: right;
-        color: #ffffff;
-        text-decoration: none;
-        box-sizing: border-box;
-    }
-    
-    .nav__link:hover {
-        background: rgba(255, 255, 255, 0.1);
-        transform: scale(1.05);
-        color: #ffffff;
-    }
-    
-    .nav__link--active {
-        background: rgba(255, 255, 255, 0.2);
-        color: #ffffff;
-    }
-    
-    /* Стили для выпадающих подменю */
-    .nav__dropdown {
-        position: relative;
-    }
-    
-    .nav__dropdown-toggle {
-        display: flex;
-        position: relative;
-        background: none;
-        padding-right: 40px;
-        border: none;
-        font-weight: bold;
-        color: #ffffff;
-        font-size: 20px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        box-sizing: border-box;
-        text-align: right;
-        width: 100%; /* Занимает всю ширину */
-        padding: 15px 35px; /* Такие же отступы как у ссылок */
-        justify-content: flex-end; /* Выравнивание текста по правому краю */
-        align-items: center;
-        gap: 10px; /* Отступ между текстом и стрелкой */
-    }
-    
-    .nav__dropdown-toggle::after {
-        content: '';
-        position: absolute;
-        display: block;
-        background-image: url('../img/стрелка-сотрудн.svg');
-        width: 22px;
-        height: 36px;
-        position: absolute;
-        right: 30px;
-        top: 50%;
-        transform: translateY(-50%);
-        transition: transform 0.3s ease;        
-        flex-shrink: 0; /* Запрещаем сжатие стрелки */
-
-    }
-    
-    .nav__dropdown-toggle--active::after {
-        transform: translateY(-50%) rotate(-90deg);
-    }
-    
-    .nav__dropdown-toggle--active:hover {
-        text-decoration: underline solid #FFD680;
-    }
-    
-
-    
-    .nav__submenu {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-        background: #FFD680;
-        border-radius: 0;
-        margin-top: 5px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    
-    .nav__submenu--active {
-        max-height: 500px;
-    }
-    
-    .nav__submenu-item {
-        margin: 0;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    
-    .nav__submenu-link {
-        display: block;
-        padding: 12px 30px;
-        color: #020639;
-        text-decoration: none;
-        font-size: 10px;
-        transition: all 0.3s ease;
-        border-radius: 0;
-        margin: 0;
-        width: 100%;
-        text-align: right;
-        box-sizing: border-box;
-    }
-    
-    .nav__submenu-link:hover {
-        background: rgba(2, 6, 57, 0.1);
-        color: #020639;
-        transform: translateX(5px);
-    }
-    
-    /* Стили для контактной информации в меню */
-    .nav__contacts {
-        margin-top: 30px;
-        padding-top: 20px;
-        width: 100%;
-    }
-    
-    .nav__contacts h3 {
-        color: #ffffff;
-        font-size: 18px;
-        margin-bottom: 15px;
-        text-align: center;
-        font-weight: 600;
-    }
-    
-    .nav__contacts p,
-    .nav__contacts a {
-        color: #ffffff;
-        font-size: 14px;
-        line-height: 1.4;
-        margin-bottom: 8px;
-        text-decoration: none;
-    }
-    
-    .nav__contacts a:hover {
-        color: #FDCC68;
-    }
-    
-    .nav__contacts .nav__phone {
-        font-weight: 600;
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-    
-    .nav__contacts .nav__schedule {
-        margin-bottom: 15px;
-    }
-    
-    .nav__contacts .nav__addresses {
-        margin-bottom: 15px;
-    }
-    
-    .nav__contacts .nav__email {
-        margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .nav__menu {
-        width: 250px;
-    }
-    
-    .nav__link {
-        font-size: 20px;
     }
 }
