@@ -61,26 +61,7 @@
     align-items: center;
     min-height: 60vh;
 }
-.slider { position: relative; width: 100%; }
-.slider { position: relative; }
-.slider__viewport { 
-    overflow: hidden; 
-    border-radius: 16px; 
-    position: relative;
-    touch-action: pan-y pinch-zoom;
-}
-.slider__track { display: flex; transition: transform 0.4s ease; will-change: transform; }
-.slider__slide { flex: 0 0 auto; min-width: 0; user-select: none; }
-.slider__slide img { display: block; width: 100%; height: auto; object-fit: cover; }
 
-.slider__btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(2,6,57,0.6); color: #FDCC68; border: 1px solid rgba(253,204,104,0.5); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; z-index: 3; }
-.slider__btn:hover { background: rgba(2,6,57,0.8); }
-.slider__btn--prev { left: 10px; }
-.slider__btn--next { right: 10px; }
-
-.slider__dots { display: flex; gap: 8px; justify-content: center; margin-top: 12px; }
-.slider__dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; }
-.slider__dot--active { background: #FDCC68; }
 .genpass-slider__image {
     display: flex;
     max-height: 410px;
@@ -88,6 +69,7 @@
     margin: 0 auto;
     align-self: center;
 }
+
 @media (max-width: 768px) {
     .genpass-slider { margin: 30px auto 60px; }
     .slider__btn { width: 40px; height: 40px; }
