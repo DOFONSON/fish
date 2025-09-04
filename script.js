@@ -63,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Слайдер для genpass.html
 document.addEventListener('DOMContentLoaded', function() {
     const slider = document.getElementById('genpassSlider');
     if (!slider) return;
@@ -76,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let current = 0;
     const viewport = slider.querySelector('.slider__viewport');
-    const getItemsPerView = () => 1; // показываем по одному изображению на любом экране
+    const getItemsPerView = () => 1; 
     let itemsPerView = getItemsPerView();
     let slideWidth = () => Math.floor(viewport.clientWidth / itemsPerView);
 
@@ -85,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const w = slideWidth();
         slides.forEach(s => { s.style.width = w + 'px'; });
         track.style.width = (w * slides.length) + 'px';
-        // ограничиваем current, чтобы не уехать дальше последней страницы
         const maxIndex = Math.max(0, slides.length - itemsPerView);
         if (current > maxIndex) current = maxIndex;
         track.style.transform = `translateX(-${current * w}px)`;
@@ -123,10 +121,8 @@ document.addEventListener('DOMContentLoaded', function() {
     btnNext.addEventListener('click', (e) => { e.preventDefault(); next(); });
     btnPrev.addEventListener('click', (e) => { e.preventDefault(); prev(); });
 
-    // Resize handler
     window.addEventListener('resize', () => layout());
 
-    // Swipe support with snapping
     let isDragging = false;
     let startX = 0;
     let deltaX = 0;
@@ -155,7 +151,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const w = slideWidth();
         const maxOffset = Math.max(0, (slides.length - itemsPerView) * w);
         let next = startOffset - deltaX;
-        // clamp within bounds
         next = Math.max(0, Math.min(next, maxOffset));
         track.style.transform = `translateX(-${next}px)`;
         e.preventDefault();
@@ -181,13 +176,11 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('pointercancel', onPointerUp);
     window.addEventListener('blur', onPointerUp);
 
-    // Autoplay (optional)
     let timer = setInterval(() => {
         const maxIndex = Math.max(0, slides.length - itemsPerView);
         if (current >= maxIndex) goTo(0); else next();
     }, 5000);
     slider.addEventListener('pointerdown', () => clearInterval(timer));
 
-    // Init
     layout();
 });

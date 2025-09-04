@@ -15,25 +15,6 @@
     padding: 200px 100px 0;
 }
 
-.genpass-slider {
-    position: relative;
-    z-index: 20;
-    margin: 40px auto 80px;
-    max-width: 1100px;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    min-height: 60vh;
-}
-
-.genpass-slider__image {
-    display: flex;
-    max-height: 410px;
-    max-width: 290px;
-    margin: 0 auto;
-    align-self: center;
-}
-
 .price-section {
     text-align: center;
     display: flex;
@@ -54,21 +35,17 @@
     border-radius: 10px 10px 0 0;
 }
 
-/* Сетка вместо таблицы для адаптивности */
 .price-table {
     z-index: 10;
     display: grid;
     grid-template-columns: repeat(5, minmax(120px, 1fr));
     gap: 0;
-    /* границы рисуем на ячейках */
     margin: 0 auto 24px;
     background: rgba(2, 6, 57, 0.4);
     border: 2px solid #fff;
     border-top: none;
-    /* сливаемся с заголовком над таблицей */
 }
 
-/* Карточки прайса */
 .price-cards { text-align: center; padding-top: 16px; }
 .price-cards h3 {
     display: inline-block; margin: 0 auto 16px; padding: 10px 16px;
@@ -98,7 +75,6 @@
   .price-card__list li { gap: 8px; }
 }
 
-/* Разрушаем табличные контейнеры, чтобы сетка применялась к ячейкам */
 .price-table thead,
 .price-table tbody,
 .price-table tr {
@@ -109,7 +85,6 @@
 .price-table td {
     padding: 10px 16px;
     border: 2px solid #fff;
-    /* границы со всех сторон */
     text-align: center;
     color: #fff;
     white-space: nowrap;
@@ -152,7 +127,6 @@
     }
 }
 
-/* Узкие экраны: делаем прокрутку и компактность */
 @media (max-width: 600px) {
     .price-section {
         align-items: center;
@@ -164,7 +138,6 @@
         box-sizing: border-box;
     }
 
-    /* Горизонтальная прокрутка без ломки верстки */
     .price-section {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
