@@ -317,7 +317,7 @@ footer p {
 .footer__container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 3rem;
+    gap: 1.5rem;
     align-items: start;
     padding-bottom: 105px;
 }
@@ -344,7 +344,7 @@ footer p {
 .footer__contacts {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .footer__phone a {
@@ -433,8 +433,8 @@ footer p {
     }
     
     .footer__contacts {
-        font-size: 6px;
-        gap: 1rem;
+        font-size: 8px;
+        gap: 0.5rem;
     }
 
     .footer__container {
