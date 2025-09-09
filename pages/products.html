@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Продукты</title>
+    <title>ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../css/products.css">
 </head>
@@ -13,15 +13,64 @@
     <header class="header">
         <nav class="nav">
             <div class="nav__container">
-                <div class="nav__logo">
-                    <div class="logo-icon"><img src="../img/Logo.svg" alt="logo"></div>
-                    <h1>ОСЕТРИНСКОЕ <br> <span class="nav__logo_sub">РЫБХОЗЯЙСТВО</span></h1>
+                <div class="logo">
+                    <div class="logo-icon"><a href="./main.html"><img src="../img/Logo.svg" alt="logo"></a></div>
+                    <h1>ОСЕТРИНСКОЕ <br> <span class="logo_sub">РЫБХОЗЯЙСТВО</span></h1>
                 </div>
                 <ul class="nav__menu">
-                    <li><a href="fishing.html" class="nav__link">рыбалка</a></li>
-                    <li><a href="cooperation.html" class="nav__link">сотрудничество</a></li>
-                    <li><a href="products.html" class="nav__link nav__link--active">продукты</a></li>
-                    <li><a href="contacts.html" class="nav__link">контакты</a></li>
+                    <li><a href="main.html" class="nav__link">Главная</a></li>
+                    <li><a href="fishing.html" class="nav__link">Рыбалка</a></li>
+                    <li class="nav__dropdown">
+                        <a href="./aliveordead.html" class="nav__link">Осетровые</a>
+                        <button class="nav__dropdown-toggle">
+                            <span>Осетровые</span>
+                        </button>
+                        <ul class="nav__submenu">
+                            <li class="nav__submenu-item"><a href="./genpass.html"
+                                    class="nav__submenu-link">Генетический пасспорт</a></li>
+                            <li class="nav__submenu-item"><a href="./oplod.html" class="nav__submenu-link">Икра
+                                    оплодотворенная</a></li>
+                            <li class="nav__submenu-item"><a href="./aliveordead.html" class="nav__submenu-link">Живой
+                                    или охлажденный осетр</a></li>
+                            <li class="nav__submenu-item"><a href="./young.html" class="nav__submenu-link">Молодь
+                                    осетроывых</a></li>
+                            <li class="nav__submenu-item"><a href="./hybrids.html" class="nav__submenu-link">Гибриды</a>
+                            </li>
+                            <li class="nav__submenu-item"><a href="./beluga.html" class="nav__submenu-link">Белуга</a>
+                            </li>
+                            <li class="nav__submenu-item"><a href="./kaluga.html" class="nav__submenu-link">Калуга</a>
+                            </li>
+                            <li class="nav__submenu-item"><a href="./lensk.html" class="nav__submenu-link">Ленский
+                                    осётр</a></li>
+                            <li class="nav__submenu-item"><a href="./sturgeon.html" class="nav__submenu-link">Русский
+                                    осётр</a></li>
+                            <li class="nav__submenu-item"><a href="./stellate.html"
+                                    class="nav__submenu-link">Севрюга</a></li>
+                            <li class="nav__submenu-item"><a href="./sterlet.html"
+                                    class="nav__submenu-link">Стерлядь</a></li>
+                            <li class="nav__submenu-item"><a href="./caviar.html" class="nav__submenu-link">Икра
+                                    пищевая</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="products.html" class="nav__link nav__link--active">Товарная рыба</a>
+                    </li>
+                    <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+
+                    <div class="nav__contacts">
+                        <div class="nav__phone">
+                            <a href="tel:+79778169942">+7 977 816-99-42</a>
+                        </div>
+                        <div class="nav__schedule">
+                            <p>ПОНЕДЕЛЬНИК-ВОСКРЕСЕНЬЕ: 06:00 - 20:00</p>
+                        </div>
+                        <div class="nav__addresses">
+                            <p>Московская обл., Волоколамский р-н, дер. Таболово, ул. Озёрная, 28</p>
+                        </div>
+                        <div class="nav__email">
+                            <a href="mailto:osetrinskoe@yandex.ru">e-mail: osetrinskoe@yandex.ru</a>
+                        </div>
+                    </div>
                 </ul>
                 <button class="nav__toggle" aria-label="Открыть меню">
                     <span></span>
@@ -33,28 +82,125 @@
     </header>
 
     <main class="products">
-        <div class="products__hero">
-            <div class="products__hero-image"></div>
-            <div class="products__hero-gradient"></div>
+        <div class="bg-container">
+            <div class="bg-image"></div>
+            <div class="bottom_gradient"></div>
         </div>
 
-        <section class="products__main">
-            <div class="products__content">
-                <h2 class="products__title">продукты</h2>
-                <div class="products__text">
-                    <p>Осетринское рыбхозяйство предлагает свою продукцию как для частных покупателей, так и для
-                        различных организаций — ресторанов, магазинов, гостиниц и других предприятий. В нашем
-                        ассортименте — высококачественная икра и свежая рыба, которые отличаются отличным вкусом и
-                        соответствуют всем стандартам качества. Мы гарантируем надежные поставки и индивидуальный подход
-                        к каждому клиенту, будь то частное лицо или крупная организация.</p>
-                    <p>Наша икра и рыба проходят строгий контроль качества и полностью соответствуют всем санитарным и
-                        ветеринарным нормам, что делает нас надежным партнером для бизнеса любого уровня.</p>
+        <section>
+            <div class="content">
+                <h2 class="title">Товарная рыба</h2>
+                <div class="text">
+                    <section class="product-cards">
+                        <h3>Цены на рыбу</h3>
+                        <div class="product-cards__grid">
+                            <article class="product-card">
+                                <img class="product-card__image" src="../img/carp.jpg" alt="Карп">
+                                <div class="product-card__body">
+                                    <h4 class="product-card__title">Карп</h4>
+                                    <div class="product-card__price">250 ₽/кг</div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <img class="product-card__image" src="../img/sazan.jpg" alt="Сазан">
+                                <div class="product-card__body">
+                                    <h4 class="product-card__title">Сазан</h4>
+                                    <div class="product-card__price">300 ₽/кг</div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <img class="product-card__image" src="../img/for.jpg" alt="Форель">
+                                <div class="product-card__body">
+                                    <h4 class="product-card__title">Форель</h4>
+                                    <div class="product-card__price">1000 ₽/кг</div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <img class="product-card__image" src="../img/shu.jpg" alt="Щука">
+                                <div class="product-card__body">
+                                    <h4 class="product-card__title">Щука</h4>
+                                    <div class="product-card__price">450 ₽/кг</div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <img class="product-card__image" src="../img/kar.jpg" alt="Карась">
+                                <div class="product-card__body">
+                                    <h4 class="product-card__title">Карась</h4>
+                                    <div class="product-card__price">200 ₽/кг</div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <img class="product-card__image" src="../img/Ctenopharyngodon_idella.jpg" alt="Амур">
+                                <div class="product-card__body">
+                                    <h4 class="product-card__title">Амур</h4>
+                                    <div class="product-card__price">400 ₽/кг</div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <img class="product-card__image" src="../img/tolst.png" alt="Толстолобик">
+                                <div class="product-card__body">
+                                    <h4 class="product-card__title">Толстолобик</h4>
+                                    <div class="product-card__price">300 ₽/кг</div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <img class="product-card__image" src="../img/karas-sereb.jpg" alt="Живец карася">
+                                <div class="product-card__body">
+                                    <h4 class="product-card__title">Живец карася</h4>
+                                    <div class="product-card__price">300 ₽/кг</div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <img class="product-card__image" src="../img/plo.jpg" alt="Живец плотвы">
+                                <div class="product-card__body">
+                                    <h4 class="product-card__title">Живец плотвы</h4>
+                                    <div class="product-card__price">300 ₽/кг</div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <img class="product-card__image" src="../img/Screenshot_20241125_170538_com.avito.android.jpg" alt="Осётр">
+                                <div class="product-card__body">
+                                    <h4 class="product-card__title">Осётр</h4>
+                                    <div class="product-card__price">1300 ₽/кг</div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <img class="product-card__image" src="../img/23.jpg" alt="Стерлядь">
+                                <div class="product-card__body">
+                                    <h4 class="product-card__title">Стерлядь</h4>
+                                    <div class="product-card__price">1300 ₽/кг</div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>
 
+        <section class="genpass-slider">
+            <div class="slider" id="genpassSlider" aria-label="Слайдер изображений">
+                <button class="slider__btn slider__btn--prev" type="button"
+                    aria-label="Предыдущее изображение">‹</button>
+                <div class="slider__viewport">
+                    <div class="slider__track">
+                        <div class="slider__slide">
+                            <img class="genpass-slider__image" src="../img/665.jpg" alt="Севрюга">
+                        </div>
+                        <div class="slider__slide">
+                            <img class="genpass-slider__image" src="../img/45.jpg" alt="Севрюга">
+                        </div>
+                        <div class="slider__slide">
+                            <img class="genpass-slider__image" src="../img/77.png" alt="Севрюга">
+                        </div>
+                        <div class="slider__dots" aria-hidden="true"></div>
+
+                    </div>
+                    <button class="slider__btn slider__btn--next" type="button"
+                        aria-label="Следующее изображение">›</button>
+        </section>
+
         <section class="info">
-            <div class="products__info">
+            <div class="info__text">
                 <p>Получить более подробную информацию вы всегда можете связавшись с нами по контактному телефону.</p>
             </div>
         </section>
@@ -62,28 +208,31 @@
 
     <footer class="footer">
         <div class="footer__container">
-            <div class="footer__logo">
+            <div class="logo">
                 <div class="logo-icon"><img src="../img/Logo.svg" alt="logo"></div>
-                <h3>ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО</h3>
+                <h1>ОСЕТРИНСКОЕ <br> <span class="logo_sub">РЫБХОЗЯЙСТВО</span></h1>
             </div>
             <div class="footer__contacts">
-                <div class="footer__phone">
-                    <a href="tel:+79778169942">+7 977 816-99-42</a>
+                <div class="footer__row--first">
+                    <div class="footer__phone">
+                        <a href="tel:+79778169942">+7 977 816-99-42</a>
+                    </div>
+                    <div class="footer__schedule">
+                        <p>ПОНЕДЕЛЬНИК-ВОСКРЕСЕНЬЕ: 06:00 - 20:00</p>
+                    </div>
                 </div>
-                <div class="footer__addresses">
-                    <p>Московская обл., Волоколамский р-н, дер. Таболово, ул. Озёрная, 28</p>
-                    <p>Представительство в Москве: Пресненский вал, дом 8, стр 3.</p>
-                </div>
-                <div class="footer__schedule">
-                                            <p>ПОНЕДЕЛЬНИК-ПЯТНИЦА: 06:00 - 20:00</p>
-                    <p>СУББОТА И ВОСКРЕСЕНЬЕ: 11:00 - 18:00</p>
-                </div>
-                <div class="footer__email">
-                    <a href="mailto:osetrinskoe@yandex.ru">e-mail: osetrinskoe@yandex.ru</a>
+                <div class="footer__row--second">
+                    <div class="footer__addresses">
+                        <p>Московская обл., Волоколамский р-н, дер. Таболово, ул. Озёрная, 28</p>
+                    </div>
+                    <div class="footer__email">
+                        <a href="mailto:osetrinskoe@yandex.ru">e-mail: osetrinskoe@yandex.ru</a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="../script.js"></script>
 </body>
 
 </html>

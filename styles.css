@@ -129,7 +129,6 @@ body {
     font-weight: 500;
     transition: color 0.2s ease, transform 0.2s ease;
     position: relative;
-    text-transform: lowercase;
     font-size: 27px;
     letter-spacing: 0.02em;
 }
@@ -544,6 +543,10 @@ footer p {
     .nav__dropdown {
         position: relative;
     }
+    .nav__link {
+        white-space: nowrap;
+        font-size: 22px;
+    }
     
     .nav__dropdown-toggle {
         display: none;
@@ -551,6 +554,37 @@ footer p {
     
     .nav__submenu {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 260px;
+        background: #FFD680;
+        border-radius: 8px;
+        padding: 8px 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        z-index: 1001;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    
+    .nav__dropdown:hover > .nav__submenu,
+    .nav__dropdown:focus-within > .nav__submenu {
+        display: block;
+    }
+    
+    .nav__submenu-item { list-style: none; }
+    
+    .nav__submenu-link {
+        display: block;
+        padding: 10px 16px;
+        color: #020639;
+        text-decoration: none;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    
+    .nav__submenu-link:hover {
+        background: rgba(2, 6, 57, 0.10);
+        color: #020639;
     }
     
     .nav__contacts {
