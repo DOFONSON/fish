@@ -2,6 +2,8 @@
 $title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
 $extraStyles = ['../css/sturgeon.css'];
 $activePage = 'aliveordead';
+$metaDescription = 'Русский осётр: характеристики вида, производители, оплодотворённая икра.';
+$metaKeywords = ['русский осетр', 'Acipenser gueldenstaedtii', 'икра осетра'];
 require __DIR__ . '/header.php';
 ?>
     <main class="sturgion">

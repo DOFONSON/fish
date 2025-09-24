@@ -2,6 +2,8 @@
 $title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
 $extraStyles = ['../css/stellate.css'];
 $activePage = 'aliveordead';
+$metaDescription = 'Севрюга: особенности вида, нерестовые температуры, возможные гибриды.';
+$metaKeywords = ['севрюга', 'Acipenser stellatus', 'икра севрюги'];
 require __DIR__ . '/header.php';
 ?>
 

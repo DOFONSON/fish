@@ -4,6 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php if (!empty($metaDescription)) { ?>
+    <meta name="description" content="<?= htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8') ?>">
+    <?php } ?>
+    <?php if (!empty($metaKeywords)) { ?>
+    <meta name="keywords" content="<?= htmlspecialchars(is_array($metaKeywords) ? implode(', ', $metaKeywords) : $metaKeywords, ENT_QUOTES, 'UTF-8') ?>">
+    <?php } ?>
     <title><?= isset($title) ? $title : '' ?></title>
     <link rel="stylesheet" href="../styles.css">
     <?php if (!empty($extraStyles) && is_array($extraStyles)) { foreach ($extraStyles as $styleHref) { ?>
@@ -16,7 +22,7 @@
         <nav class="nav">
             <div class="nav__container">
                 <div class="logo">
-                    <div class="logo-icon"><a href="main.php"><img src="../img/Logo.svg" alt="logo"></a></div>
+                    <div class="logo-icon"><a href="main.php"><img src="../img/Logo.svg" alt="Логотип осетринское" title="Логотип осетринское"></a></div>
                     <a href="main.php" class="logo__link"><h1>ОСЕТРИНСКОЕ <br> <span class="logo_sub">РЫБХОЗЯЙСТВО</span></h1></a>
                 </div>
                 <ul class="nav__menu">

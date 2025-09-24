@@ -3,6 +3,8 @@ $title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудниче
 $extraStyles = ['../css/main.css'];
 $activePage = 'main';
 $footerBack = true;
+$metaDescription = 'Осетринское рыбхозяйство: выращивание осетровых, икра, товарная рыба, рыбалка в Подмосковье.';
+$metaKeywords = ['осетрина', 'черная икра', 'рыбалка Подмосковье', 'осетровые', 'товарная рыба'];
 require __DIR__ . '/header.php';
 ?>
     <main class="main">

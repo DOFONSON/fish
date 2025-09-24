@@ -2,6 +2,8 @@
 $title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
 $extraStyles = ['../css/lensk.css'];
 $activePage = 'aliveordead';
+$metaDescription = 'Ленский (сибирский) осётр: пластичный к условиям, паспортизированные производители.';
+$metaKeywords = ['ленский осетр', 'Acipenser baerii', 'рыбопосадочный материал'];
 require __DIR__ . '/header.php';
 ?>
 

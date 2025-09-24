@@ -2,6 +2,8 @@
 $title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
 $extraStyles = ['../css/contacts.css'];
 $activePage = 'contacts';
+$metaDescription = 'Контакты Осетринского рыбхозяйства: адрес, телефон, e-mail, схема проезда.';
+$metaKeywords = ['контакты', 'адрес', 'телефон', 'рыбхоз', 'осетринское'];
 require __DIR__ . '/header.php';
 ?>
 

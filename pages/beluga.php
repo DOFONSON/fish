@@ -2,6 +2,8 @@
 $title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
 $extraStyles = ['../css/beluga.css'];
 $activePage = 'aliveordead';
+$metaDescription = 'Белуга: описание вида, РМС, оплодотворённая икра, возможные гибриды.';
+$metaKeywords = ['белуга', 'Acipenser huso', 'икра белуги', 'гибриды белуги'];
 require __DIR__ . '/header.php';
 ?>
 

@@ -2,6 +2,8 @@
 $title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
 $extraStyles = ['../css/products.css'];
 $activePage = 'products';
+$metaDescription = 'Цены на товарную рыбу: осётр, стерлядь, карп, форель и др.';
+$metaKeywords = ['товарная рыба', 'осётр цена', 'стерлядь цена', 'купить рыбу'];
 require __DIR__ . '/header.php';
 ?>
 

@@ -2,6 +2,8 @@
 $title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
 $extraStyles = ['../css/aliveordead.css'];
 $activePage = 'aliveordead';
+$metaDescription = 'Живой и охлаждённый осётр: розница и опт, доставка по Москве и МО.';
+$metaKeywords = ['живой осетр', 'охлажденный осетр', 'купить осетра', 'опт рыба', 'осетровые'];
 require __DIR__ . '/header.php';
 ?>
 

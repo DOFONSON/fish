@@ -2,6 +2,8 @@
 $title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
 $extraStyles = ['../css/kaluga.css'];
 $activePage = 'aliveordead';
+$metaDescription = 'Калуга: описание вида, РМС, высокая пластичность и устойчивость гибридов.';
+$metaKeywords = ['калуга', 'Acipenser dauricus', 'осетр калуга', 'гибриды калуги'];
 require __DIR__ . '/header.php';
 ?>
 

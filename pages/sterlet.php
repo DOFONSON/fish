@@ -2,6 +2,8 @@
 $title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
 $extraStyles = ['../css/sterlet.css'];
 $activePage = 'aliveordead';
+$metaDescription = 'Стерлядь и стерлядь-альбинос: характеристики, икра «золотая», маточное стадо.';
+$metaKeywords = ['стерлядь', 'стерлядь альбинос', 'Acipenser ruthenus', 'золотая икра'];
 require __DIR__ . '/header.php';
 ?>
 
