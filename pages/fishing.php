@@ -28,28 +28,22 @@ require __DIR__ . '/header.php';
                 <h3 class="we-have__title">У нас есть:</h3>
                 <ul class="we-have__icon-list">
                     <li class="we-have__icon-list-item">
-                        <img src="../img/Vector.svg" alt="дом">
-                        <p class="we-have__text">ЖИЛЬЁ</p>
+                        <img src="../img/Vector.svg" class="we-have__item-img" alt="дом">
                     </li>
                     <li class="we-have__icon-list-item">
                         <img class="we-have__item-img" src="../img/иконка локация.svg" alt="дорога">
-                        <p class="we-have__text">ПОЛТОРА <br>ЧАСА ОТ<br> МОСКВЫ</p>
                     </li>
                     <li class="we-have__icon-list-item">
                         <img class="we-have__item-img" src="../img/иконка баня.svg" alt="баня">
-                        <p class="we-have__text">БАНЯ</p>
                     </li>
                     <li class="we-have__icon-list-item">
                         <img class="we-have__item-img" src="../img/иконка электричество.png" alt="электричество">
-                        <p class="we-have__text">ЭЛЕКТРИЧЕСТВО</p>
                     </li>
                     <li class="we-have__icon-list-item">
                         <img class="we-have__item-img" src="../img/иконка паркинг.svg" alt="паркинг">
-                        <p class="we-have__text">ПАРКИНГ</p>
                     </li>
                     <li class="we-have__icon-list-item">
                         <img class="we-have__item-img" src="../img/иконка магазин снастей.svg" alt="магазин">
-                        <p class="we-have__text">МАГАЗИН <br>ДЛЯ <br>РЫБАКА</p>
                     </li>
                 </ul>
                 <ul class="we-have__list">
@@ -68,6 +62,18 @@ require __DIR__ . '/header.php';
                 <ul class="adress__list">
                     <li><img class="adress__image" src="../img/Rectangle 3.jpg" alt="Карта"></li>
                     <li><img class="adress__image" src="../img/Rectangle 6.jpg" alt="Карта"></li>
+                    <div class="adress__image" style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.ru/maps/org/osetrinskoye_rybkhozyaystvo/99303687446/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Осетринское рыбхозяйство</a><a
+                    href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/category/hunters_and_fishers_clubs/184107301/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Клуб охотников и рыболовов в Москве и
+                    Московской области</a><a
+                    href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/category/fish_and_seafood/184108033/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:28px;">Рыба и морепродукты в Москве и
+                    Московской области</a><iframe
+                    src="https://yandex.ru/map-widget/v1/?l=sat&ll=36.051115%2C55.916927&mode=search&oid=99303687446&ol=biz&z=16"
+                    width="424" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
                 </ul>
             </div>
             <div class="adress__text">

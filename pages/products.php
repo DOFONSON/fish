@@ -21,77 +21,77 @@ require __DIR__ . '/header.php';
                         <h3>Цены на рыбу</h3>
                         <div class="product-cards__grid">
                             <article class="product-card">
-                                <img class="product-card__image" src="../img/carp.jpg" alt="Карп">
+                                <img class="product-card__image" src="../img/carp.jpg" alt="Фото живого карпа на земле" title="Фото живого карпа на земле">
                                 <div class="product-card__body">
                                     <h4 class="product-card__title">Карп</h4>
                                     <div class="product-card__price">250 ₽/кг</div>
                                 </div>
                             </article>
                             <article class="product-card">
-                                <img class="product-card__image" src="../img/sazan.jpg" alt="Сазан">
+                                <img class="product-card__image" src="../img/sazan.jpg" alt="Фото живого сазана на руках" title="Фото живого сазана на руках">
                                 <div class="product-card__body">
                                     <h4 class="product-card__title">Сазан</h4>
                                     <div class="product-card__price">300 ₽/кг</div>
                                 </div>
                             </article>
                             <article class="product-card">
-                                <img class="product-card__image" src="../img/for.jpg" alt="Форель">
+                                <img class="product-card__image" src="../img/for.jpg" alt="Фото живой форели в сети" title="Фото живой форели в сети">
                                 <div class="product-card__body">
                                     <h4 class="product-card__title">Форель</h4>
                                     <div class="product-card__price">1000 ₽/кг</div>
                                 </div>
                             </article>
                             <article class="product-card">
-                                <img class="product-card__image" src="../img/shu.jpg" alt="Щука">
+                                <img class="product-card__image" src="../img/shu.jpg" alt="Фото живой щуки на земле" title="Фото живой щуки на земле">
                                 <div class="product-card__body">
                                     <h4 class="product-card__title">Щука</h4>
                                     <div class="product-card__price">450 ₽/кг</div>
                                 </div>
                             </article>
                             <article class="product-card">
-                                <img class="product-card__image" src="../img/kar.jpg" alt="Карась">
+                                <img class="product-card__image" src="../img/kar.jpg" alt="Фото живого карася на земле" title="Фото живого карася на земле">
                                 <div class="product-card__body">
                                     <h4 class="product-card__title">Карась</h4>
                                     <div class="product-card__price">200 ₽/кг</div>
                                 </div>
                             </article>
                             <article class="product-card">
-                                <img class="product-card__image" src="../img/Ctenopharyngodon_idella.jpg" alt="Амур">
+                                <img class="product-card__image" src="../img/Ctenopharyngodon_idella.jpg" alt="Фото живого амура на земле" title="Фото живого амура на земле">
                                 <div class="product-card__body">
                                     <h4 class="product-card__title">Амур</h4>
                                     <div class="product-card__price">400 ₽/кг</div>
                                 </div>
                             </article>
                             <article class="product-card">
-                                <img class="product-card__image" src="../img/tolst.png" alt="Толстолобик">
+                                <img class="product-card__image" src="../img/tolst.png" alt="Фото живого толстолобика на руках" title="Фото живого толстолобика на руках">
                                 <div class="product-card__body">
                                     <h4 class="product-card__title">Толстолобик</h4>
                                     <div class="product-card__price">300 ₽/кг</div>
                                 </div>
                             </article>
                             <article class="product-card">
-                                <img class="product-card__image" src="../img/karas-sereb.jpg" alt="Живец карася">
+                                <img class="product-card__image" src="../img/karas-sereb.jpg" alt="Живец карася на белом фоне" title="Живец карася на белом фоне">
                                 <div class="product-card__body">
                                     <h4 class="product-card__title">Живец карася</h4>
                                     <div class="product-card__price">300 ₽/кг</div>
                                 </div>
                             </article>
                             <article class="product-card">
-                                <img class="product-card__image" src="../img/plo.jpg" alt="Живец плотвы">
+                                <img class="product-card__image" src="../img/plo.jpg" alt="Живецы плотвы в большом аквариуме" title="Живецы плотвы в большом аквариуме">
                                 <div class="product-card__body">
                                     <h4 class="product-card__title">Живец плотвы</h4>
                                     <div class="product-card__price">300 ₽/кг</div>
                                 </div>
                             </article>
                             <article class="product-card">
-                                <img class="product-card__image" src="../img/Screenshot_20241125_170538_com.avito.android.jpg" alt="Осётр">
+                                <img class="product-card__image" src="../img/Screenshot_20241125_170538_com.avito.android.jpg" alt="Фото живого осетра на руках" title="Фото живого осетра на руках">
                                 <div class="product-card__body">
                                     <h4 class="product-card__title">Осётр</h4>
                                     <div class="product-card__price">1300 ₽/кг</div>
                                 </div>
                             </article>
                             <article class="product-card">
-                                <img class="product-card__image" src="../img/23.jpg" alt="Стерлядь">
+                                <img class="product-card__image" src="../img/23.jpg" alt="Фото живой стерляди на земле" title="Фото живой стерляди на земле">
                                 <div class="product-card__body">
                                     <h4 class="product-card__title">Стерлядь</h4>
                                     <div class="product-card__price">1300 ₽/кг</div>

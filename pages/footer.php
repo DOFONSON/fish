@@ -1,4 +1,4 @@
-    <footer class="footer">
+    <footer class="footer<?= isset($footerClass) ? ' ' . $footerClass : '' ?>">
         <?php if (!empty($footerBack)) { ?>
         <div class="footer-back"></div>
         <?php } ?>

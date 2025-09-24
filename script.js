@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('.genpass-slider__image');
+    const images = document.querySelectorAll('.genpass-slider__image, .adress__image');
     if (!images.length) return;
 
     let overlay = null;

@@ -11,7 +11,7 @@ body {
 }
 
 .main {
-    margin-top: 400px;
+    margin-top: 200px;
 }
 
 .main-list {
@@ -67,6 +67,21 @@ body {
     flex: 1 auto;
     background-repeat: no-repeat;
     z-index: 1;
+}
+
+/* Темный футер для главной страницы */
+.footer--dark {
+    color: #1d1d1d;
+}
+
+.footer--dark .footer__phone a,
+.footer--dark .footer__email a {
+    color: #1d1d1d;
+}
+
+.footer--dark .footer__schedule p,
+.footer--dark .footer__addresses p {
+    color: #1d1d1d;
 }
 
 
