@@ -82,6 +82,9 @@ body {
     gap: 12px;
 }
 
+.logo__link {
+    text-decoration: none
+}
 
 .logo-icon img {
     width: 70px;
@@ -803,7 +806,7 @@ footer p {
         margin-bottom: 24px;
     }
     .content {
-        padding: 120px 0 0;
+        padding: 120px 20px 0;
     }
     .text p {
         font-size: 18px;
