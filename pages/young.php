@@ -1,85 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../css/young.css">
-</head>
-
-<body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav__container">
-                <div class="logo">
-                    <div class="logo-icon"><a href="./main.html"><img src="../img/Logo.svg" alt="logo"></a></div>
-                    <h1>ОСЕТРИНСКОЕ <br> <span class="logo_sub">РЫБХОЗЯЙСТВО</span></h1>
-                </div>
-                <ul class="nav__menu">
-                    <li><a href="main.html" class="nav__link">Главная</a></li>
-                    <li><a href="fishing.html" class="nav__link">Рыбалка</a></li>
-                    <li class="nav__dropdown">
-                        <a href="./aliveordead.html" class="nav__link nav__link--active">Осетровые</a>
-                        <button class="nav__dropdown-toggle">
-                            <span>Осетровые</span>
-                        </button>
-                        <ul class="nav__submenu">
-                            <li class="nav__submenu-item"><a href="./genpass.html"
-                                    class="nav__submenu-link">Генетический пасспорт</a></li>
-                            <li class="nav__submenu-item"><a href="./oplod.html" class="nav__submenu-link">Икра
-                                    оплодотворенная</a></li>
-                            <li class="nav__submenu-item"><a href="./aliveordead.html" class="nav__submenu-link">Живой
-                                    или охлажденный осетр</a></li>
-                            <li class="nav__submenu-item"><a href="./young.html" class="nav__submenu-link">Молодь
-                                    осетроывых</a></li>
-                            <li class="nav__submenu-item"><a href="./hybrids.html" class="nav__submenu-link">Гибриды</a>
-                            </li>
-                            <li class="nav__submenu-item"><a href="./beluga.html" class="nav__submenu-link">Белуга</a>
-                            </li>
-                            <li class="nav__submenu-item"><a href="./kaluga.html" class="nav__submenu-link">Калуга</a>
-                            </li>
-                            <li class="nav__submenu-item"><a href="./lensk.html" class="nav__submenu-link">Ленский
-                                    осётр</a></li>
-                            <li class="nav__submenu-item"><a href="./sturgeon.html" class="nav__submenu-link">Русский
-                                    осётр</a></li>
-                            <li class="nav__submenu-item"><a href="./stellate.html"
-                                    class="nav__submenu-link">Севрюга</a></li>
-                            <li class="nav__submenu-item"><a href="./sterlet.html"
-                                    class="nav__submenu-link">Стерлядь</a></li>
-                            <li class="nav__submenu-item"><a href="./caviar.html" class="nav__submenu-link">Икра
-                                    пищевая</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="products.html" class="nav__link">Товарная рыба</a>
-                    </li>
-                    <li><a href="contacts.html" class="nav__link">Контакты</a></li>
-
-                    <div class="nav__contacts">
-                        <div class="nav__phone">
-                            <a href="tel:+79778169942">+7 977 816-99-42</a>
-                        </div>
-                        <div class="nav__schedule">
-                            <p>ПОНЕДЕЛЬНИК-ВОСКРЕСЕНЬЕ: 06:00 - 20:00</p>
-                        </div>
-                        <div class="nav__addresses">
-                            <p>Московская обл., Волоколамский р-н, дер. Таболово, ул. Озёрная, 28</p>
-                        </div>
-                        <div class="nav__email">
-                            <a href="mailto:osetrinskoe@yandex.ru">e-mail: osetrinskoe@yandex.ru</a>
-                        </div>
-                    </div>
-                </ul>
-                <button class="nav__toggle" aria-label="Открыть меню">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </nav>
-    </header>
+<?php
+$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
+$extraStyles = ['../css/young.css'];
+$activePage = 'aliveordead';
+require __DIR__ . '/header.php';
+?>
 
     <main class="young">
         <div class="bg-container">
@@ -199,35 +123,5 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="logo">
-                <div class="logo-icon"><img src="../img/Logo.svg" alt="logo"></div>
-                <h1>ОСЕТРИНСКОЕ <br> <span class="logo_sub">РЫБХОЗЯЙСТВО</span></h1>
-            </div>
-            <div class="footer__contacts">
-                <div class="footer__row--first">
-                    <div class="footer__phone">
-                        <a href="tel:+79778169942">+7 977 816-99-42</a>
-                    </div>
-                    <div class="footer__schedule">
-                        <p>ПОНЕДЕЛЬНИК-ПЯТНИЦА: 06:00 - 20:00</p>
-                        <p>СУББОТА И ВОСКРЕСЕНЬЕ: 11:00 - 18:00</p>
-                    </div>
-                </div>
-                <div class="footer__row--second">
-                    <div class="footer__addresses">
-                        <p>Московская обл., Волоколамский р-н, дер. Таболово, ул. Озёрная, 28</p>
-                        <p>Представительство в Москве: Пресненский вал, дом 8, стр 3.</p>
-                    </div>
-                    <div class="footer__email">
-                        <a href="mailto:osetrinskoe@yandex.ru">e-mail: osetrinskoe@yandex.ru</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="../script.js"></script>
-</body>
+<?php require __DIR__ . '/footer.php'; ?>
 
-</html>
