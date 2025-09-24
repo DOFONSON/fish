@@ -277,11 +277,11 @@ footer p {
 }
 
 .footer__container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    flex-flow: column-reverse;
     gap: 1.5rem;
     align-items: start;
-    padding-bottom: 105px;
+    padding-bottom: 30px;
 }
 
 .footer__logo {
@@ -394,12 +394,12 @@ footer p {
     }
     
     .footer__contacts {
-        font-size: 8px;
+        font-size: 12px;
         gap: 0.5rem;
     }
 
     .footer__container {
-        padding-bottom: 300px;
+        padding-bottom: 50px;
     }
 
     .header::after {

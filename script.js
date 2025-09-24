@@ -184,3 +184,67 @@ document.addEventListener('DOMContentLoaded', function() {
 
     layout();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.genpass-slider__image');
+    if (!images.length) return;
+
+    let overlay = null;
+    let modalImg = null;
+
+    function ensureLightbox() {
+        if (overlay) return;
+        overlay = document.createElement('div');
+        overlay.className = 'lightbox-overlay';
+        overlay.style.position = 'fixed';
+        overlay.style.inset = '0';
+        overlay.style.background = 'rgba(0,0,0,0.85)';
+        overlay.style.display = 'flex';
+        overlay.style.alignItems = 'center';
+        overlay.style.justifyContent = 'center';
+        overlay.style.zIndex = '9999';
+        overlay.style.cursor = 'zoom-out';
+        overlay.style.padding = '0';
+
+        modalImg = document.createElement('img');
+        modalImg.style.width = '100vw';
+        modalImg.style.height = '100vh';
+        modalImg.style.maxWidth = '100vw';
+        modalImg.style.maxHeight = '100vh';
+        modalImg.style.objectFit = 'contain';
+        modalImg.style.boxShadow = '';
+        modalImg.style.borderRadius = '';
+        modalImg.alt = '';
+
+        overlay.appendChild(modalImg);
+        overlay.addEventListener('click', closeLightbox);
+        document.addEventListener('keydown', onKeyDown);
+        document.body.appendChild(overlay);
+    }
+
+    function openLightbox(src, alt) {
+        ensureLightbox();
+        modalImg.src = src;
+        modalImg.alt = alt || '';
+        overlay.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        if (!overlay) return;
+        overlay.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+
+    function onKeyDown(e) {
+        if (e.key === 'Escape') closeLightbox();
+    }
+
+    images.forEach(img => {
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', (e) => {
+            e.preventDefault();
+            openLightbox(img.src, img.alt);
+        });
+    });
+});

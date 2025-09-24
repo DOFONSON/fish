@@ -55,22 +55,22 @@ require __DIR__ . '/header.php';
         <section class="fish-links">
             <ul class="fish-list">
                 <li>
-                    <a href="./beluga.html" class="fish-links__link">Белуга (Acipenser huso L.)</a>
+                    <a href="beluga.php" class="fish-links__link">Белуга (Acipenser huso L.)</a>
                 </li>
                 <li>
-                    <a href="./kaluga.html" class="fish-links__link">Калуга (Acipenser dauricus G.)</a>
+                    <a href="kaluga.php" class="fish-links__link">Калуга (Acipenser dauricus G.)</a>
                 </li>
                 <li>
-                    <a href="./stellate.html" class="fish-links__link">Севрюга (Acipenser stellatus P.)</a>
+                    <a href="stellate.php" class="fish-links__link">Севрюга (Acipenser stellatus P.)</a>
                 </li>
                 <li>
-                    <a href="./sturgeon.html" class="fish-links__link">Русский осётр (Acipenser gueldenstaedtii B.)</a>
+                    <a href="sturgeon.php" class="fish-links__link">Русский осётр (Acipenser gueldenstaedtii B.)</a>
                 </li>
                 <li>
-                    <a href="./lensk.html" class="fish-links__link">Ленский (сибирский) осётр (Acipenser baerii B.)</a>
+                    <a href="lensk.php" class="fish-links__link">Ленский (сибирский) осётр (Acipenser baerii B.)</a>
                 </li>
                 <li>
-                    <a href="./sterlet.html" class="fish-links__link">Стерлядь Acipenser ruthenus L стерлядь-альбинос (Acipenser ruthenus L.)</a>
+                    <a href="sterlet.php" class="fish-links__link">Стерлядь Acipenser ruthenus L стерлядь-альбинос (Acipenser ruthenus L.)</a>
                 </li>
             </ul>
         </section>
