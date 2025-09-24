@@ -16,48 +16,48 @@
         <nav class="nav">
             <div class="nav__container">
                 <div class="logo">
-                    <div class="logo-icon"><a href="./main.html"><img src="../img/Logo.svg" alt="logo"></a></div>
+                    <div class="logo-icon"><a href="./main.php"><img src="../img/Logo.svg" alt="logo"></a></div>
                     <h1>ОСЕТРИНСКОЕ <br> <span class="logo_sub">РЫБХОЗЯЙСТВО</span></h1>
                 </div>
                 <ul class="nav__menu">
-                    <li><a href="main.html" class="nav__link<?= (isset($activePage) && $activePage === 'main') ? ' nav__link--active' : '' ?>">Главная</a></li>
-                    <li><a href="fishing.html" class="nav__link<?= (isset($activePage) && $activePage === 'fishing') ? ' nav__link--active' : '' ?>">Рыбалка</a></li>
+                    <li><a href="main.php" class="nav__link<?= (isset($activePage) && $activePage === 'main') ? ' nav__link--active' : '' ?>">Главная</a></li>
+                    <li><a href="fishing.php" class="nav__link<?= (isset($activePage) && $activePage === 'fishing') ? ' nav__link--active' : '' ?>">Рыбалка</a></li>
                     <li class="nav__dropdown">
-                        <a href="./aliveordead.html" class="nav__link">Осетровые</a>
+                        <a href="./aliveordead.php" class="nav__link">Осетровые</a>
                         <button class="nav__dropdown-toggle">
                             <span>Осетровые</span>
                         </button>
                         <ul class="nav__submenu">
-                            <li class="nav__submenu-item"><a href="./genpass.html"
+                            <li class="nav__submenu-item"><a href="./genpass.php"
                                     class="nav__submenu-link">Генетический пасспорт</a></li>
-                            <li class="nav__submenu-item"><a href="./oplod.html" class="nav__submenu-link">Икра
+                            <li class="nav__submenu-item"><a href="./oplod.php" class="nav__submenu-link">Икра
                                     оплодотворенная</a></li>
-                            <li class="nav__submenu-item"><a href="./aliveordead.html" class="nav__submenu-link">Живой
+                            <li class="nav__submenu-item"><a href="./aliveordead.php" class="nav__submenu-link">Живой
                                     или охлажденный осетр</a></li>
-                            <li class="nav__submenu-item"><a href="./young.html" class="nav__submenu-link">Молодь
+                            <li class="nav__submenu-item"><a href="./young.php" class="nav__submenu-link">Молодь
                                     осетроывых</a></li>
-                            <li class="nav__submenu-item"><a href="./hybrids.html" class="nav__submenu-link">Гибриды</a>
+                            <li class="nav__submenu-item"><a href="./hybrids.php" class="nav__submenu-link">Гибриды</a>
                             </li>
-                            <li class="nav__submenu-item"><a href="./beluga.html" class="nav__submenu-link">Белуга</a>
+                            <li class="nav__submenu-item"><a href="./beluga.php" class="nav__submenu-link">Белуга</a>
                             </li>
-                            <li class="nav__submenu-item"><a href="./kaluga.html" class="nav__submenu-link">Калуга</a>
+                            <li class="nav__submenu-item"><a href="./kaluga.php" class="nav__submenu-link">Калуга</a>
                             </li>
-                            <li class="nav__submenu-item"><a href="./lensk.html" class="nav__submenu-link">Ленский
+                            <li class="nav__submenu-item"><a href="./lensk.php" class="nav__submenu-link">Ленский
                                     осётр</a></li>
-                            <li class="nav__submenu-item"><a href="./sturgeon.html" class="nav__submenu-link">Русский
+                            <li class="nav__submenu-item"><a href="./sturgeon.php" class="nav__submenu-link">Русский
                                     осётр</a></li>
-                            <li class="nav__submenu-item"><a href="./stellate.html"
+                            <li class="nav__submenu-item"><a href="./stellate.php"
                                     class="nav__submenu-link">Севрюга</a></li>
-                            <li class="nav__submenu-item"><a href="./sterlet.html"
+                            <li class="nav__submenu-item"><a href="./sterlet.php"
                                     class="nav__submenu-link">Стерлядь</a></li>
-                            <li class="nav__submenu-item"><a href="./caviar.html" class="nav__submenu-link">Икра
+                            <li class="nav__submenu-item"><a href="./caviar.php" class="nav__submenu-link">Икра
                                     пищевая</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="products.html" class="nav__link<?= (isset($activePage) && $activePage === 'products') ? ' nav__link--active' : '' ?>">Товарная рыба</a>
+                        <a href="products.php" class="nav__link<?= (isset($activePage) && $activePage === 'products') ? ' nav__link--active' : '' ?>">Товарная рыба</a>
                     </li>
-                    <li><a href="contacts.html" class="nav__link<?= (isset($activePage) && $activePage === 'contacts') ? ' nav__link--active' : '' ?>">Контакты</a></li>
+                    <li><a href="contacts.php" class="nav__link<?= (isset($activePage) && $activePage === 'contacts') ? ' nav__link--active' : '' ?>">Контакты</a></li>
 
                     <div class="nav__contacts">
                         <div class="nav__phone">
