@@ -5,7 +5,7 @@
         <div class="footer__container">
             <div class="logo">
                 <div class="logo-icon"><img src="../img/Logo.svg" alt="Логотип осетринское" title="Логотип осетринское"></div>
-                <h1>ОСЕТРИНСКОЕ <br> <span class="logo_sub">РЫБХОЗЯЙСТВО</span></h1>
+                <p>ОСЕТРИНСКОЕ <br> <span class="logo_sub">РЫБХОЗЯЙСТВО</span></p>
             </div>
             <div class="footer__contacts">
                 <div class="footer__row--first">

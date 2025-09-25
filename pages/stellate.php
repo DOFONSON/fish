@@ -1,5 +1,5 @@
 <?php
-$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
+$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Севрюга';
 $extraStyles = ['../css/stellate.css'];
 $activePage = 'aliveordead';
 $metaDescription = 'Севрюга: особенности вида, нерестовые температуры, возможные гибриды.';
@@ -15,7 +15,7 @@ require __DIR__ . '/header.php';
 
         <section>
             <div class="content">
-                <h2 class="title">Севрюга</h2>
+                <h1 class="title">Севрюга</h1>
                 <div class="text">
                     <p>
                         Севрюга (Acipenser stellatus P.) Севрюга - одна из наиболее красивых видов осетровых, достигает

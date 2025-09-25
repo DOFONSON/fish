@@ -1,5 +1,5 @@
 <?php
-$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
+$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Ленский осётр';
 $extraStyles = ['../css/lensk.css'];
 $activePage = 'aliveordead';
 $metaDescription = 'Ленский (сибирский) осётр: пластичный к условиям, паспортизированные производители.';
@@ -15,7 +15,7 @@ require __DIR__ . '/header.php';
 
         <section>
             <div class="content">
-                <h2 class="title">Ленский осётр</h2>
+                <h1 class="title">Ленский осётр</h1>
                 <div class="text">
                     <p>
                         Ленский (сибирский) осётр (Acipenser baerii B.) Ленский осётр - наиболее распространённый объект

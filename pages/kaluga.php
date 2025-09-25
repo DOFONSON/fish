@@ -1,5 +1,5 @@
 <?php
-$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
+$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Калуга';
 $extraStyles = ['../css/kaluga.css'];
 $activePage = 'aliveordead';
 $metaDescription = 'Калуга: описание вида, РМС, высокая пластичность и устойчивость гибридов.';
@@ -15,7 +15,7 @@ require __DIR__ . '/header.php';
 
         <section>
             <div class="content">
-                <h2 class="title">Калуга</h2>
+                <h1 class="title">Калуга</h1>
                 <div class="text">
                     <p>
                         Калуга (Acipenser dauricus G.) Калуга - вторая по величине после белуги из проходных рыб,

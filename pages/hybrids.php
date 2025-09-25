@@ -1,5 +1,5 @@
 <?php
-$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
+$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Гибриды осетровых';
 $extraStyles = ['../css/hybrids.css'];
 $activePage = 'aliveordead';
 $metaDescription = 'Гибриды осетровых: быстрорастущие, устойчивые к болезням, подбор под задачи.';
@@ -15,7 +15,7 @@ require __DIR__ . '/header.php';
 
         <section>
             <div class="content">
-                <h2 class="title">Гибриды осетровых</h2>
+                <h1 class="title">Гибриды осетровых</h1>
                 <div class="text">
                     <p>
                         В нашем ассортименте представлено 6 уникальных гибридов осетра! 

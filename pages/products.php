@@ -1,5 +1,5 @@
 <?php
-$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
+$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Товарная рыба';
 $extraStyles = ['../css/products.css'];
 $activePage = 'products';
 $metaDescription = 'Цены на товарную рыбу: осётр, стерлядь, карп, форель и др.';
@@ -15,7 +15,7 @@ require __DIR__ . '/header.php';
 
         <section>
             <div class="content">
-                <h2 class="title">Товарная рыба</h2>
+                <h1 class="title">Товарная рыба</h1>
                 <div class="text">
                     <section class="product-cards">
                         <h3>Цены на рыбу</h3>

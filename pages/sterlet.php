@@ -1,5 +1,5 @@
 <?php
-$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
+$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Стерлядь';
 $extraStyles = ['../css/sterlet.css'];
 $activePage = 'aliveordead';
 $metaDescription = 'Стерлядь и стерлядь-альбинос: характеристики, икра «золотая», маточное стадо.';
@@ -15,7 +15,7 @@ require __DIR__ . '/header.php';
 
         <section>
             <div class="content">
-                <h2 class="title">Стерлядь</h2>
+                <h1 class="title">Стерлядь</h1>
                 <div class="text">
                     <p>
                         Стерлядь (Acipenser ruthenus L.) Стерлядь - некрупная быстро созревающая рыба (в условиях УЗВ

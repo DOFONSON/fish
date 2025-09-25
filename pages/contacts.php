@@ -1,5 +1,5 @@
 <?php
-$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
+$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Контакты';
 $extraStyles = ['../css/contacts.css'];
 $activePage = 'contacts';
 $metaDescription = 'Контакты Осетринского рыбхозяйства: адрес, телефон, e-mail, схема проезда.';
@@ -15,7 +15,7 @@ require __DIR__ . '/header.php';
 
         <section>
             <div class="content">
-                <h2 class="title">Контакты</h2>
+                <h1 class="title">Контакты</h1>
                 <div class="text">
                     <p>
                         Откройте для себя вкус настоящего осетра с фермы "Осетринское"!

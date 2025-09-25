@@ -1,5 +1,5 @@
 <?php
-$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
+$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Молодь осетровых';
 $extraStyles = ['../css/young.css'];
 $activePage = 'aliveordead';
 $metaDescription = 'Молодь осетровых: мальки и гибриды, цены и объёмы, законность происхождения.';
@@ -15,7 +15,7 @@ require __DIR__ . '/header.php';
 
         <section>
             <div class="content">
-                <h2 class="title">Молодь осетровых</h2>
+                <h1 class="title">Молодь осетровых</h1>
                 <div class="text">
                     <p>
                         Большие объемы молоди осетровых рыб обсуждаются отдельно по цене <br>

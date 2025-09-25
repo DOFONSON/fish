@@ -1,5 +1,5 @@
 <?php
-$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
+$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Живой или охлажденный осётр';
 $extraStyles = ['../css/aliveordead.css'];
 $activePage = 'aliveordead';
 $metaDescription = 'Живой и охлаждённый осётр: розница и опт, доставка по Москве и МО.';
@@ -15,7 +15,7 @@ require __DIR__ . '/header.php';
 
         <section>
             <div class="content">
-                <h2 class="title">Живой или охлажденный осётр</h2>
+                <h1 class="title">Живой или охлажденный осётр</h1>
                 <div class="text">
                     <p>
                         Откройте для себя вкус настоящего осетра с фермы "Осетринское"!

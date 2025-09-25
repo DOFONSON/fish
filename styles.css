@@ -92,7 +92,7 @@ body {
     display: block;
 }
 
-.logo h1 {
+.logo p {
     line-height: 1;
     font-size: 25px;
     font-weight: 700;
@@ -182,7 +182,7 @@ body {
     filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.5));
 }
 
-.logo h1 .logo_sub {
+.logo p .logo_sub {
     font-size: 17px;
 }
 
@@ -201,6 +201,25 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     filter: grayscale(100%) contrast(130%) brightness(90%);
+}
+
+.bg-image::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(2, 6, 57, 0.00) 0%,
+        rgba(2, 6, 57, 0.06) 20%,
+        rgba(2, 6, 57, 0.12) 40%,
+        rgba(2, 6, 57, 0.20) 60%,
+        rgba(2, 6, 57, 0.32) 80%,
+        #020639 100%
+    );
+    pointer-events: none;
 }
 
 .content {
@@ -389,7 +408,7 @@ footer p {
         display: flex;
     }
 
-    .logo h1 .logo_sub {
+    .logo p .logo_sub {
         font-size: 12px;
     }
     
@@ -411,7 +430,7 @@ footer p {
             rgba(0, 0, 0, 0.0) 100%);
     }
     
-    .logo h1 {
+    .logo p {
         font-size: 1.2rem;
     }
 
@@ -426,10 +445,10 @@ footer p {
 .slider__btn { width: 36px; height: 36px; }
 
 
-    .logo h1 {
+    .logo p {
         font-size: 12px;
     }
-    .logo h1 .logo_sub {
+    .logo p .logo_sub {
         font-size: 8px;
     }
     
@@ -454,6 +473,21 @@ footer p {
     .contacts__container {
         padding: 0 15px;
     }
+}
+
+@media (max-width: 480px) {
+    .bg-container { height: 48vh; min-height: 240px; }
+    .bg-image { height: 48vh; min-height: 240px; }
+}
+
+@media (max-width: 400px) {
+    .bg-container { height: 52vh; min-height: 260px; }
+    .bg-image { height: 52vh; min-height: 260px; }
+}
+
+@media (max-width: 360px) {
+    .bg-container { height: 56vh; min-height: 280px; }
+    .bg-image { height: 56vh; min-height: 280px; }
 }
 
 @media (max-width: 360px) {
@@ -868,7 +902,7 @@ footer p {
         margin-bottom: 20px;
     }
     .content {
-        padding: 50px 14px;
+        padding: 0 14px 50px;
     }
     .text p {
         font-size: 16px;

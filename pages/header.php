@@ -11,6 +11,9 @@
     <meta name="keywords" content="<?= htmlspecialchars(is_array($metaKeywords) ? implode(', ', $metaKeywords) : $metaKeywords, ENT_QUOTES, 'UTF-8') ?>">
     <?php } ?>
     <title><?= isset($title) ? $title : '' ?></title>
+    <link rel="icon" type="image/svg+xml" href="../img/Logo.svg">
+    <link rel="icon" type="image/x-icon" href="../Logo.ico">
+    <link rel="shortcut icon" href="../Logo.ico">
     <link rel="stylesheet" href="../styles.css">
     <?php if (!empty($extraStyles) && is_array($extraStyles)) { foreach ($extraStyles as $styleHref) { ?>
     <link rel="stylesheet" href="<?= htmlspecialchars($styleHref, ENT_QUOTES, 'utf-8') ?>">
@@ -23,7 +26,7 @@
             <div class="nav__container">
                 <div class="logo">
                     <div class="logo-icon"><a href="main.php"><img src="../img/Logo.svg" alt="Логотип осетринское" title="Логотип осетринское"></a></div>
-                    <a href="main.php" class="logo__link"><h1>ОСЕТРИНСКОЕ <br> <span class="logo_sub">РЫБХОЗЯЙСТВО</span></h1></a>
+                    <a href="main.php" class="logo__link"><p>ОСЕТРИНСКОЕ <br> <span class="logo_sub">РЫБХОЗЯЙСТВО</span></p></a>
                 </div>
                 <ul class="nav__menu">
                     <li><a href="fishing.php" class="nav__link<?= (isset($activePage) && $activePage === 'fishing') ? ' nav__link--active' : '' ?>">Рыбалка</a></li>

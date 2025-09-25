@@ -1,5 +1,5 @@
 <?php
-$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
+$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Русский осётр';
 $extraStyles = ['../css/sturgeon.css'];
 $activePage = 'aliveordead';
 $metaDescription = 'Русский осётр: характеристики вида, производители, оплодотворённая икра.';
@@ -14,7 +14,7 @@ require __DIR__ . '/header.php';
 
         <section>
             <div class="content">
-                <h2 class="title">Русский осётр</h2>
+                <h1 class="title">Русский осётр</h1>
                 <div class="text">
                     <p>
                         Русский осетр (Acipenser gueldenstaedtii B.) Русский осетр - один из наиболее крупных видов

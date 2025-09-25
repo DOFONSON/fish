@@ -1,5 +1,5 @@
 <?php
-$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Сотрудничество';
+$title = 'ОСЕТРИНСКОЕ РЫБХОЗЯЙСТВО - Белуга';
 $extraStyles = ['../css/beluga.css'];
 $activePage = 'aliveordead';
 $metaDescription = 'Белуга: описание вида, РМС, оплодотворённая икра, возможные гибриды.';
@@ -15,7 +15,7 @@ require __DIR__ . '/header.php';
 
         <section>
             <div class="content">
-                <h2 class="title">Белуга</h2>
+                <h1 class="title">Белуга</h1>
                 <div class="text">
                     <p>
                         Белуга (Acipenser huso L.) Белуга - самая крупная из проходных рыб, достигает длины до 9 метров и
